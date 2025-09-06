@@ -71,8 +71,7 @@ jobs:
           name: Supermodel-Binaries
           path: '**/*.exe'
 
-      - name: Upload build log if build failed
-        if: failure()
+      - name: Upload build log
         uses: actions/upload-artifact@v4
         with:
           name: build-log
